@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hair OLIVE</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="title">Hair OLIVE</h1>
+        <p class="heading-sentence">美しさを引き出すヘアスタイルのご提案。</p>
+      </div>
+
+      <div class="navbar">
+        <!-- ul：順序のないリストを示すブロック要素（li要素と組み合わせて使用） -->
+        <ul>
+          <!-- リストの項目を示すブロック要素（ul要素やol要素の中に記述） -->
+          <li>サロンガイド</li>
+          <li>メニュー</li>
+          <li>スタッフ一覧</li>
+          <li>ギャラリー</li>
+          <li>アクセス</li>
+          <li>ブログ</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- floatの副作用を解決したい要素にclearfixを付与 -->
+    <div class="contents clearfix">
+      <div class="left-content">
+        <!-- 表作成 -->
+        <h2>新着情報</h2>
+        <!-- 表を作成するブロック要素 -->
+        <table>
+          <!-- 表の横方向の一行を定義するブロック要素 -->
+          <tr>
+            <!-- 表の見出しを作成するブロック要素 -->
+            <th>日にち</th>
+            <th>ニュース</th>
+          </tr>
+          <tr>
+            <!-- 表のデータを入れるブロック要素 -->
+            <td>2014/10/06</td>
+            <td>【新規のお客さま限定】<strong>10％OFF</strong>キャンペーン</td>
+          </tr>
+          <tr>
+            <td>2014/10/03</td>
+            <td>うれしい<em>ポイントアップキャンペーン</em></td>
+          </tr>
+          <tr>
+            <td>2014/09/27</td>
+            <td>2015年成人式 ご予約承ります</td>
+          </tr>
+        </table>
+
+        <!-- 画像表示 -->
+        <h2>スタイリスト紹介</h2>
+        <ul>
+          <li>
+            <img src="sample1.jpeg" alt="staff1" class="stylist-image">
+            <h4 class="stylist-name">鈴木</h4>
+          </li>
+          <li>
+            <img src="sample2.jpeg" alt="staff2" class="stylist-image">
+            <h4 class="stylist-name">佐藤</h4>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="right-content">
+        <!-- 見出しとリンク -->
+        <h3>15th Anniversary</h3>
+        <p>
+          15周年記念キャンペーン
+          <a href="https://tech-camp.in/expert">⇒詳しくはこちら</a>
+        </p>
+        <h3>アプリで簡単予約</h3>
+        <p>
+          <a href="https://itunes.apple.com">App Store</a>
+          <a href="https://store.google.com">Google Play</a>
+        </p>
+        <!-- フォーム実装 -->
+        <h3>メールで予約</h3>
+        <form>
+          <!-- フォームの入力欄や実行ボタンなどを作成できる要素 -->
+          <input type="text" placeholder="名前を入力してください"><br>
+          <!-- 複数行のテキスト入力欄を作成する要素 -->
+          <!-- placeholder：仮の文字列 -->
+          <textarea placeholder="予約日時やご要望をお書きください"></textarea><br>
+          <!-- label：labelで囲まれた部分の項目を関連づける -->
+          <label>
+            <!-- value：送信ボタンを押した際にどのような値が贈られるか -->
+            <input type="radio" name="RadioGroup1" value="0">男性
+          </label><br>
+          <label>
+            <input type="radio" name="RadioGroup1" value="1">女性
+          </label><br>
+          <!-- フォームの選択メニューを表す -->
+          <select>
+            <!-- メニューの選択肢を作成するときに使用 -->
+            <option value="0">学生</option>
+            <option value="1">社会人</option>
+          </select>
+          <div class="questionaire">
+            Hair OLIVEの利用は初めてですか？<br>
+            <label>
+              <input type="checkbox" name="Checkbox" value="0">
+                初めて
+            </label>
+            <label>
+              <input type="checkbox" name="Checkbox" value="1">
+                2回目以降
+            </label><br>
+          </div>
+          <input type="submit" value="予約メールを送る">
+        </form>
+
+      </div>
+    </div>
+
+    <footer>
+      <small>Copyright(C) Hair OLIVE ALL RIGHTS RESERVED.</small>
+    </footer>
+  </body>
+</html>
